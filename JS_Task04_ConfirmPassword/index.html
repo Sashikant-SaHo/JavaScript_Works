@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Password Validation</title>
+  </head>
+  <body class="container-fluid">
+    <h2>Compare Password</h2>
+    <div class="form-group">
+      <label>Password</label>
+      <div>
+        <input id="textPwd" type="password" class="form-control" />
+        <span id="lblPwdError"></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <div>
+        <input
+          onblur="verifyPattren ()"
+          id="textConfirm"
+          type="password"
+          class="form-control"
+        />
+        <span id="lblError"></span>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
